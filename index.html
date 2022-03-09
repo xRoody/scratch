@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -14,20 +17,18 @@
             </label>
             <button class="search_button" id="search_button"></button>
         </div>
-        <div class="user_icon"></div>
-        <div class="hamburger_wrapper">
-            <div class="additional_one" id="additional_one"></div>
-            <div class="additional_two" id="additional_two"></div>
-            <div id="hamburger" class="hamburger"></div>
-        </div>
-
+        <div class="user_icon" id="fav"></div>
     </header>
-    <div class="side_menu" id="menu">
-
+    <main class="main" id="main"></main>
+    <div id="external_search_form" class="side_menu">
+        <p class="name">External search</p>
+        <label class="form_label">
+            Year:<input type="range" autocomplete="false"  min="1960" max="2022" value="2022" id="range"><span id="year">2022</span>
+        </label>
+        <label class="form_label">
+            Genre:<input type="text" autocomplete="false" placeholder="Genre" class="form_input" id="genre">
+        </label>
     </div>
-    <main class="main" id="main">
-
-    </main>
 <script src="index.js"></script>
 </body>
 </html>
